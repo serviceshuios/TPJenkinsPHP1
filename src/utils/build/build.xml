@@ -14,7 +14,7 @@
 		<delete dir="${project.basedir}/build/coverage" />
 		<delete dir="${project.basedir}/build/logs" />
 		<delete dir="${project.basedir}/build/pdepend" />
-		<deletes dir="${project.basedir}/build/www" />
+		<delete dir="${project.basedir}/build/www" />
 		
 		<mkdir dir="${project.basedir}/build/www" />
 		<mkdir dir="${project.basedir}/build/api" />
