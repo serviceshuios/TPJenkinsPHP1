@@ -23,14 +23,14 @@
     </target>
 
     <target name="qa" description="Lance les outils d'analyse">
-		<phingcall target="pdepend" />
+		<!-- <phingcall target="pdepend" /> -->
 		<phingcall target="phpmd" />
 		<phingcall target="phpcpd" />
 		<phingcall target="phploc" />
 		<phingcall target="phpcs" />
 		<phingcall target="phpdoc" />
-    <phingcall target="phpunit" />
-    <phingcall target="phpcb" />
+		<phingcall target="phpunit" />
+		<phingcall target="phpcb" />
     </target>
 	<target name="premier-outil" description="...">
     <!-- Ici, le gros du boulot pour le premier outil ;-) -->
@@ -46,9 +46,9 @@
 	
 	<target name="pdepend">
 		<phpdepend file="${project.basedir}/${source}/www">
-        <logger type="jdepend-xml" outfile="${project.basedir}/build/logs/jdepend.xml" />
-        <logger type="jdepend-chart" outfile="${project.basedir}/build/pdepend/dependencies.svg" />
-        <logger type="overview-pyramid" outfile="${project.basedir}/build/pdepend/overview-pyramid.svg" />
+			<logger type="jdepend-xml" outfile="${project.basedir}/build/logs/jdepend.xml" />
+			<logger type="jdepend-chart" outfile="${project.basedir}/build/pdepend/dependencies.svg" />
+			<logger type="overview-pyramid" outfile="${project.basedir}/build/pdepend/overview-pyramid.svg" />
 		</phpdepend>
 	</target>
 	
