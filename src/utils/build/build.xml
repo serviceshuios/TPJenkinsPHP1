@@ -14,7 +14,9 @@
 		<delete dir="${project.basedir}/build/coverage" />
 		<delete dir="${project.basedir}/build/logs" />
 		<delete dir="${project.basedir}/build/pdepend" />
-
+		<deletes dir="${project.basedir}/build/www" />
+		
+		<mkdir dir="${project.basedir}/build/www" />
 		<mkdir dir="${project.basedir}/build/api" />
 		<mkdir dir="${project.basedir}/build/code-browser" />
 		<mkdir dir="${project.basedir}/build/coverage" />
@@ -30,7 +32,7 @@
 		<phingcall target="phpcs" />
 		<phingcall target="phpdoc" />
 		<phingcall target="phpunit" />
-		<phingcall target="phpcb" />
+		<phingcall target="phpcb" />s
     </target>
 	<target name="premier-outil" description="...">
     <!-- Ici, le gros du boulot pour le premier outil ;-) -->
