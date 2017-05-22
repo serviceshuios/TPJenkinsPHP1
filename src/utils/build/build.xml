@@ -60,16 +60,16 @@
 		</phpmd>
 	</target>
 	
-	<!--<target name="phpcpd">
+	<target name="phpcpd">
 		<phpcpd file="${project.basedir}/${source}/www">
 			<formatter type="pmd" outfile="${project.basedir}/build/logs/pmd-cpd.xml"/>
 		</phpcpd>
-	</target> -->
+	</target> 
 	
-	<!--
+	
 	<target name="phploc">
 		<exec logoutput="true" dir="${project.basedir}" command="phploc --log-csv '${project.basedir}/build/logs/phploc.csv' '${project.basedir}/${source}/www'" escape="false" />
-	</target>  -->
+	</target>
     
 	<target name="phpcs">
 		<phpcodesniffer standard="Zend">
@@ -99,9 +99,8 @@
 	<target name="phpunit">
 		<exec logoutput="true" dir="${project.basedir}/${source}/tests" command="phpunit" escape="false" />
 	</target>
-	<!--
+	
 	<target name="phpcb">
 		<exec logoutput="true" command="phpcb --log '${project.basedir}/build/logs' --source '${project.basedir}/${source}/www' --output '${project.basedir}/build/code-browser'" escape="false" />
 	</target>
--->
 </project>
