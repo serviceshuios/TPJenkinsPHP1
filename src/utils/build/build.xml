@@ -69,8 +69,8 @@
 	<!--
 	<target name="phploc">
 		<exec logoutput="true" dir="${project.basedir}" command="phploc --log-csv '${project.basedir}/build/logs/phploc.csv' '${project.basedir}/${source}/www'" escape="false" />
-	</target>
-     -->
+	</target>  -->
+    
 	<target name="phpcs">
 		<phpcodesniffer standard="Zend">
 			<fileset dir="${project.basedir}/${source}/www">
